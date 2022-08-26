@@ -11,14 +11,14 @@ struct ContentView: View {
     @State var counter: [Int] = [0, 0, 0]
     var body: some View {
         VStack{
-            HStack{
+            3ExtractedView()
                 Text("أستغفر الله العظيم").font(.title)
                 Spacer()
                 Text("\(counter[0])")
                     .font(.largeTitle)
                     .frame(width: 100, height: 100, alignment: .center)
                     .foregroundColor(.white)
-                    .background(Color.green)
+                    .background(Color.indigo)
                     .clipShape(Circle())
                     .padding()
                     .onTapGesture {
@@ -33,7 +33,7 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .frame(width: 100, height: 100, alignment: .center)
                     .foregroundColor(.white)
-                    .background(Color.green)
+                    .background(Color.indigo)
                     .clipShape(Circle())
                     .padding()
                     .onTapGesture {
@@ -47,7 +47,7 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .frame(width: 100, height: 100, alignment: .center)
                     .foregroundColor(.white)
-                    .background(Color.green)
+                    .background(Color.indigo)
                     .clipShape(Circle())
                     .padding()
                     .onTapGesture {
@@ -66,3 +66,10 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+
+
+
+
